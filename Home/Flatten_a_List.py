@@ -10,6 +10,7 @@ def flat_list(array):
             result.append(element)
     return result
 '''
+#'''
 def flat_list(array):
     l = []
     m = [array]
@@ -21,8 +22,20 @@ def flat_list(array):
         else:
             l.append(node)
     return l
-'''
+#'''
 
+
+
+'''
+####note############################################
+def flat_list(I):
+    r=[]
+    def f(I):
+        for i in I:
+            r.append(i) if type(i) is int else f(i)
+    f(I)
+    return r
+#'''
 
 
 
